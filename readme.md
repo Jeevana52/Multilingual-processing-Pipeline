@@ -1,7 +1,8 @@
-🌍 Multilingual Processing Pipeline
+# Multilingual Processing Pipeline
+
 A comprehensive text processing and translation pipeline with sentiment analysis, built with Streamlit and Python.
 
-✨ Features
+## Features
 Multi-Language Translation: Support for 24+ languages
 Sentiment Analysis: NLTK-based sentiment scoring
 Emotion Detection: AI-powered emotion classification
@@ -13,7 +14,7 @@ Anthropic Claude API (premium)
 Translation History: SQLite database storage
 Analytics Dashboard: Usage statistics and insights
 Real-time Processing: Async processing pipeline
-🚀 Quick Start
+## Quick Start
 Local Development
 Clone the repository
 bash
@@ -38,10 +39,10 @@ Environment Variables (Optional)
 Set these for premium features:
 
 bash
-# For Anthropic Claude API
+## For Anthropic Claude API
 export ANTHROPIC_API_KEY="your-anthropic-api-key"
 
-# For Azure Translator (future feature)
+## For Azure Translator (future feature)
 export AZURE_TRANSLATOR_KEY="your-azure-key"
 export AZURE_TRANSLATOR_ENDPOINT="your-azure-endpoint"
 Supported Languages
@@ -51,7 +52,7 @@ English, Spanish, French, German, Italian, Portuguese
 Russian, Japanese, Korean, Chinese, Arabic, Hindi
 Turkish, Polish, Dutch, Swedish, Norwegian, Danish
 Finnish, Czech, Hungarian, Romanian, Bulgarian, Croatian
-📊 Architecture
+## Architecture
 Text Input → Language Detection → Text Analysis → Translation → Results
                                       ↓
                                Sentiment Analysis
@@ -63,7 +64,7 @@ Text Processor: Sentiment, emotion, and keyword analysis
 Translation Engines: Multiple translation backends
 Database Manager: SQLite storage for history
 Streamlit Interface: Web-based user interface
-🛠️ Deployment Options
+## Deployment Options
 1. Streamlit Cloud
 Push your code to GitHub
 Go to share.streamlit.io
@@ -81,11 +82,11 @@ Connect your GitHub repository
 Railway will auto-detect and deploy
 4. Docker Hub
 bash
-# Build and push
+## Build and push
 docker build -t yourusername/multilingual-pipeline .
 docker push yourusername/multilingual-pipeline
 
-# Deploy anywhere
+## Deploy anywhere
 docker run -p 8501:8501 yourusername/multilingual-pipeline
 📈 Usage Examples
 Basic Translation
@@ -101,7 +102,7 @@ result = asyncio.run(pipeline.process_text(
 ))
 
 print(result['translations']['es']['translated_text'])
-# Output: "Hola, ¿cómo estás?"
+## Output: "Hola, ¿cómo estás?"
 With Sentiment Analysis
 python
 result = asyncio.run(pipeline.process_text(
