@@ -32,8 +32,8 @@ A comprehensive text processing and translation pipeline with sentiment analysis
 
 1. Clone the repository
    ```bash
-   git clone https://github.com/yourusername/multilingual-processing-pipeline.git
-   cd multilingual-processing-pipeline
+   git clone https://github.com/Jeevana52/Multilingual-processing-Pipeline.git
+   cd Multilingual-processing-Pipeline
    ```
 
 2. Create and activate a virtual environment
